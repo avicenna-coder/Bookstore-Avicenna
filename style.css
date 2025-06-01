@@ -278,6 +278,8 @@ section{
 
 }
 
+/* Desktop */
+
 .home .row .content{
     width: 100%;
     height: auto;
@@ -286,6 +288,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* margin-top: 15rem; */
 }
 
 .home .row .books-slider{
@@ -1000,6 +1003,7 @@ section{
     position: fixed;
     top:0;
     z-index: 1000;
+    overflow-y: auto;
 }
 
 .form-section .icon-x{
@@ -1199,9 +1203,11 @@ section{
 
     }
 
+    /* Mobile */
+
     .row .content{
         height: auto;
-        margin-top: 3rem;
+        margin-top: 5rem;
         /* background-color: yellow; */
     }
 
@@ -1234,6 +1240,7 @@ section{
 
     .form-section form{
         width: 80%;
+        overflow-y: auto;
     }
 
     .newselements-wrapped{
@@ -1356,6 +1363,25 @@ section{
     .discount-container p{
         font-size: .9rem;
     }
+
+    .arrival-section .all-boxes-grandparent{
+        row-gap: 0;
+    }
+
+    .arrival-section{
+        row-gap: 0;
+        padding-top: 0;
+    }
+
+    .arrival-section .arrival-heading{
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .arrival-section .arrival-heading span{
+        font-size: 1.2rem;
+    }
+
 
     .client-section .arrival-heading span{
         font-size: 1.2rem;
@@ -1493,7 +1519,6 @@ section{
         row-gap: 1rem;
         /* padding-right: 1rem; */
     }
-
     .discount-section .image-container{
         width: 100%;
         height: auto;

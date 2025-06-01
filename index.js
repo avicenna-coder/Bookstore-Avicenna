@@ -516,7 +516,6 @@ function blogsShow(blogsItems){
 
 slides.forEach((slide, index) => {
   const realHeight = slide.getBoundingClientRect().height;
-  console.log(`Slide ${index + 1}: ${realHeight}px`);
 });
 
 // This script makes sure all swiper slides have the same height
@@ -765,6 +764,21 @@ function printOnUi(){
 
     let describeSite = document.getElementById("user-review")
     describeSite.textContent = userDescription
-    
   })
+  resize()
 }
+
+let particlesContainer = document.getElementById("particles-js");
+let contentBox = document.querySelector(".home .row .content");
+
+function resize() {
+  if (!particlesContainer && contentBox) {
+    contentBox.style.marginTop = "15rem";
+  }
+}
+
+// Call the function once on load
+resize();
+
+// Optional: Also respond to screen resizing
+window.addEventListener("resize", resize);
