@@ -14,14 +14,20 @@
         <!-- Header Section Starts -->
         <header class="logo-searchbook-container">
             <a href="#" class="book-logo"><i class="fas fa-book"><span class="book-text"> Avicenna</span></i></a>
-            <div class="search-input-container">
-                <input type="text" placeholder="Search here..." id="search"><i class="fas fa-search"></i>
-            </div>
+            <form type="submit" class="search-input-container">
+                <input type="text" placeholder="Search here..." id="search"><i class="fas fa-search" id="click-search"></i>
+            </form>
             <div class="icons-header">
-                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                <a href="#" class="searchForContainer"><i class="fa-solid fa-search"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" id="love-icon" class="love-icon"><i class="fa-solid fa-heart"></i></a>
+                <a href="#" class="searchForContainer" id="searchInput"><i class="fa-solid fa-search"></i></a>
+                <div id="cart-icon">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <span class="cart-item-count">0</span>
+              </div>
                 <a href="#" class="user-click"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="profile-image">
+              <img src="./default-img.jpg" alt="">
             </div>
         </header>
         <!-- Header Section Ends -->
@@ -38,31 +44,32 @@
 
         <!-- Hero Section Starts -->
         <div class="home-container">
-          <section class="home" id="home">
-      
+           <section class="home" id="home">
               <div class="row">
                   <div class="content">
-                      <h3>Upto 75% Off</h3>
+                    <div id="particles-js"></div>
+                    <div class="left-box">
+                      <h3 class="upto-off">Upto 75% Off</h3>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt nostrum accusamus. Nam alias sit necessitatibus, aliquid ex minima at!</p>
                       <a href="#" class="btn">shop now</a>
+                    </div>
                   </div>
           
-                  <div class="swiper books-slider">
+                  <div class="swiper books-slider" id="books-slides">
                       <div class="swiper-wrapper">
-                          <a href="#" class="swiper-slide"><img src="./images/book-1.png" alt=""></a>
-                          <a href="#" class="swiper-slide"><img src="./images/book-2.png" alt=""></a>
-                          <a href="#" class="swiper-slide"><img src="./images/book-3.png" alt=""></a>
-                          <a href="#" class="swiper-slide"><img src="./images/book-4.png" alt=""></a>
-                          <a href="#" class="swiper-slide"><img src="./images/book-5.png" alt=""></a>
-                          <a href="#" class="swiper-slide"><img src="./images/book-6.png" alt=""></a>
+                          <a href="#" class="swiper-slide"><img src="https://i.postimg.cc/WpYgLSr7/book-1.png" alt=""></a>
+                          <a href="#" class="swiper-slide"><img src="https://i.postimg.cc/ydYg2S85/book-2.png" alt=""></a>
+                          <a href="#" class="swiper-slide"><img src="https://i.postimg.cc/TYWL8xTR/book-3.png" alt=""></a>
+                          <a href="#" class="swiper-slide"><img src="https://i.postimg.cc/qvsNRGtS/book-4.png" alt=""></a>
+                          <a href="#" class="swiper-slide"><img src="https://i.postimg.cc/43wnvNQ1/book-5.png" alt=""></a>
+                          <a href="#" class="swiper-slide"><img src="https://i.postimg.cc/fLLy8nHQ/book-6.png" alt=""></a>
                       </div>
                       <img src="./images/stand.png" class="stand" alt="">
                   </div>
           
               </div>
-          
+
           </section>
-      
         </div>
       
         <!-- Hero Section Ends -->
@@ -109,13 +116,33 @@
             <div class="swiper featured-books-container">
               <div class="swiper-wrapper">
                 <div class="box swiper-slide">
+                  <div class="icons">
+                    <a href="#" class="searchForContainer"><i class="fa-solid fa-search"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                  <div class="image-featured">
+                    <a href="#" ><img src="https://i.postimg.cc/WpYgLSr7/book-1.png" alt=""></a>
+                  </div>
+                  <div class="featured-content">
+                    <h3>Featured Books</h3>
+                    <div class="bookamount-btn">
+                      <div class="book-amount">
+                        <p>$15.99</p>
+                        <small>$20.99</small>
+                      </div>
+                      <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="box swiper-slide">
                 <div class="icons">
                   <a href="#" class="searchForContainer"><i class="fa-solid fa-search"></i></a>
                   <a href="#"><i class="fa-solid fa-heart"></i></a>
                   <a href="#"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="image-featured">
-                  <a href="#" ><img src="./images/book-1.png" alt=""></a>
+                  <a href="#"><img src="https://i.postimg.cc/dVgcbMtK/book-10.png" alt=""></a>
                 </div>
                 <div class="featured-content">
                   <h3>Featured Books</h3>
@@ -135,7 +162,7 @@
                   <a href="#"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="image-featured">
-                  <a href="#"><img src="./images/book-2.png" alt=""></a>
+                  <a href="#"><img src="https://i.postimg.cc/ydYg2S85/book-2.png" alt=""></a>
                 </div>
                 <div class="featured-content">
                   <h3>Featured Books</h3>
@@ -155,7 +182,7 @@
                   <a href="#"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="image-featured">
-                  <a href="#"><img src="./images/book-3.png" alt=""></a>
+                  <a href="#"><img src="https://i.postimg.cc/TYWL8xTR/book-3.png" alt=""></a>
                 </div>
                 <div class="featured-content">
                   <h3>Featured Books</h3>
@@ -175,7 +202,7 @@
                   <a href="#"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="image-featured">
-                  <a href="#"><img src="./images/book-4.png" alt=""></a>
+                  <a href="#"><img src="https://i.postimg.cc/qvsNRGtS/book-4.png" alt=""></a>
                 </div>
                 <div class="featured-content">
                   <h3>Featured Books</h3>
@@ -195,7 +222,7 @@
                   <a href="#"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="image-featured">
-                  <a href="#"><img src="./images/book-5.png" alt=""></a>
+                  <a href="#"><img src="https://i.postimg.cc/43wnvNQ1/book-5.png" alt=""></a>
                 </div>
                 <div class="featured-content">
                   <h3>Featured Books</h3>
@@ -215,7 +242,7 @@
                   <a href="#"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="image-featured">
-                  <a href="#"><img src="./images/book-6.png" alt=""></a>
+                  <a href="#"><img src="https://i.postimg.cc/fLLy8nHQ/book-6.png" alt=""></a>
                 </div>
                 <div class="featured-content">
                   <h3>Featured Books</h3>
@@ -235,7 +262,7 @@
                   <a href="#"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="image-featured">
-                  <a href="#"><img src="./images/book-7.png" alt=""></a>
+                  <a href="#"><img src="https://i.postimg.cc/7hr6wGHw/book-7.png" alt=""></a>
                 </div>
                 <div class="featured-content">
                   <h3>Featured Books</h3>
@@ -255,7 +282,7 @@
                   <a href="#"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="image-featured">
-                  <a href="#"><img src="./images/book-8.png" alt=""></a>
+                  <a href="#"><img src="https://i.postimg.cc/cHwx9xQj/book-8.png" alt=""></a>
                 </div>
                 <div class="featured-content">
                   <h3>Featured Books</h3>
@@ -275,30 +302,10 @@
                   <a href="#"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="image-featured">
-                  <a href="#"><img src="./images/book-9.png" alt=""></a>
+                  <a href="#"><img src="https://i.postimg.cc/HxDH7qft/book-9.png" alt=""></a>
                 </div>
-                <div class="featured-content">
-                  <h3>Featured Books</h3>
-                  <div class="bookamount-btn">
-                    <div class="book-amount">
-                      <p>$15.99</p>
-                      <small>$20.99</small>
-                    </div>
-                    <a href="#" class="btn">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="box swiper-slide">
-                <div class="icons">
-                  <a href="#" class="searchForContainer"><i class="fa-solid fa-search"></i></a>
-                  <a href="#"><i class="fa-solid fa-heart"></i></a>
-                  <a href="#"><i class="fa-solid fa-eye"></i></a>
-                </div>
-                <div class="image-featured">
-                  <a href="#"><img src="./images/book-10.png" alt=""></a>
-                </div>
-                <div class="featured-content">
-                  <h3>Featured Books</h3>
+                <div class="featured-content" data-index="0">
+                  <h3 class="title">Featured Books</h3>
                   <div class="bookamount-btn">
                     <div class="book-amount">
                       <p>$15.99</p>
@@ -319,7 +326,7 @@
          <section class="newsletter">
           <form action="" class="form-container">
             <div class="newselements-wrapped">
-              <label for="newstitle">Subscribe for Latest Updates</label>
+              <label for="newstitle" id="Subscribe-latest">Subscribe for Latest Updates</label>
               <input type="text" id="newstitle">
               <button class="btn">Subscribe</button>
             </div>
@@ -333,7 +340,9 @@
             <div class="swiper all-boxes-grandparent">
               <div class="swiper-wrapper">
                 <div class="swiper-slide box">
-                  <img src="./images/book-1.png" alt="">
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/WpYgLSr7/book-1.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -350,7 +359,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide box">
-                  <img src="./images/book-2.png" alt="">
+                 <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/ydYg2S85/book-2.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -367,7 +378,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide box">
-                  <img src="./images/book-3.png" alt="">
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/TYWL8xTR/book-3.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -384,7 +397,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide box">
-                  <img src="./images/book-4.png" alt="">
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/qvsNRGtS/book-4.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -401,7 +416,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide box">
-                  <img src="./images/book-5.png" alt="">
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/43wnvNQ1/book-5.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -418,7 +435,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide box">
-                  <img src="./images/book-6.png" alt="">
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/fLLy8nHQ/book-6.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -436,27 +455,12 @@
                 </div>
             </div>
             </div>
-            <div class="swiper all-boxes-grandparent">
-              <div class="swiper-wrapper">
+            <div class="swiper all-boxes-grandparent all-boxes-two">
+             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
-                  <img src="./images/book-1.png" alt="">
-                  <div class="text-icons-container">
-                      <h3>New Arrivals</h3>
-                      <div class="book-amount">
-                        <p>$15.99</p>
-                        <small>$20.99</small>
-                      </div>
-                    <div class="arrivals-icons">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/ydYg2S85/book-2.png" alt=""></a>
                   </div>
-                </div>
-                <div class="swiper-slide box">
-                  <img src="./images/book-2.png" alt="">
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -473,7 +477,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide box">
-                  <img src="./images/book-3.png" alt="">
+                 <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/WpYgLSr7/book-1.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -490,7 +496,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide box">
-                  <img src="./images/book-4.png" alt="">
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/TYWL8xTR/book-3.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -507,7 +515,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide box">
-                  <img src="./images/book-5.png" alt="">
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/qvsNRGtS/book-4.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -524,7 +534,28 @@
                   </div>
                 </div>
                 <div class="swiper-slide box">
-                  <img src="./images/book-6.png" alt="">
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/43wnvNQ1/book-5.png" alt=""></a>
+                  </div>
+                  <div class="text-icons-container">
+                      <h3>New Arrivals</h3>
+                      <div class="book-amount">
+                        <p>$15.99</p>
+                        <small>$20.99</small>
+                      </div>
+                      <div class="arrivals-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide box">
+                  <div class="img-container">
+                    <a href="#" ><img src="https://i.postimg.cc/fLLy8nHQ/book-6.png" alt=""></a>
+                  </div>
                   <div class="text-icons-container">
                       <h3>New Arrivals</h3>
                       <div class="book-amount">
@@ -554,7 +585,7 @@
             <a href="#" class="btn">Shop Now</a>
           </div>
           <div class="image-container">
-            <img src="./images/deal-img.jpg" alt="">
+            <img src="https://i.postimg.cc/yxjmWkrp/deal-img.jpg" alt="">
           </div>
         </section>
          <!-- Discount Section Ends -->
@@ -565,8 +596,22 @@
           <div class="swiper client-review">
             <div class="swiper-wrapper">
               <div class="swiper-slide client-box">
+                <div class="client-box-img client-words">
+                  <img src="https://i.postimg.cc/mgJQcx84/pic-1.png" alt="">
+                </div>
+                <h3 id="client-name">John Doe</h3>
+                <p id="user-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati adipisci repudiandae eos itaque doloribus voluptatem odit, inventore delectus porro.</p>
+                <div class="arrivals-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <div class="swiper-slide client-box">
                 <div class="client-box-img">
-                  <img src="./images/pic-1.png" alt="">
+                  <img src="https://i.postimg.cc/hPhzVyJt/pic-2.png" alt="">
                 </div>
                 <h3>John Doe</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati adipisci repudiandae eos itaque doloribus voluptatem odit, inventore delectus porro.</p>
@@ -580,7 +625,7 @@
               </div>
               <div class="swiper-slide client-box">
                 <div class="client-box-img">
-                  <img src="./images/pic-2.png" alt="">
+                  <img src="https://i.postimg.cc/6QVyBFPY/pic-3.png" alt="">
                 </div>
                 <h3>John Doe</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati adipisci repudiandae eos itaque doloribus voluptatem odit, inventore delectus porro.</p>
@@ -594,7 +639,7 @@
               </div>
               <div class="swiper-slide client-box">
                 <div class="client-box-img">
-                  <img src="./images/pic-3.png" alt="">
+                  <img src="https://i.postimg.cc/wv0MmLgN/pic-4.png" alt="">
                 </div>
                 <h3>John Doe</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati adipisci repudiandae eos itaque doloribus voluptatem odit, inventore delectus porro.</p>
@@ -608,7 +653,7 @@
               </div>
               <div class="swiper-slide client-box">
                 <div class="client-box-img">
-                  <img src="./images/pic-4.png" alt="">
+                  <img src="https://i.postimg.cc/RV3hWW83/pic-5.png" alt="">
                 </div>
                 <h3>John Doe</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati adipisci repudiandae eos itaque doloribus voluptatem odit, inventore delectus porro.</p>
@@ -622,21 +667,7 @@
               </div>
               <div class="swiper-slide client-box">
                 <div class="client-box-img">
-                  <img src="./images/pic-5.png" alt="">
-                </div>
-                <h3>John Doe</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati adipisci repudiandae eos itaque doloribus voluptatem odit, inventore delectus porro.</p>
-                <div class="arrivals-icons">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-              </div>
-              <div class="swiper-slide client-box">
-                <div class="client-box-img">
-                  <img src="./images/pic-6.png" alt="">
+                  <img src="https://i.postimg.cc/dVr09zJw/pic-6.png" alt="">
                 </div>
                 <h3>John Doe</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid obcaecati adipisci repudiandae eos itaque doloribus voluptatem odit, inventore delectus porro.</p>
@@ -657,10 +688,10 @@
          <section class="blog-section" id="blogs">
            <h1 class="arrival-heading"><span>Our Blogs</span></h1>
            <div class="swiper blog-container">
-              <div class="swiper-wrapper">
+              <div class="blog-swiper-wrapper swiper-wrapper">
                 <div class="swiper-slide box">
                   <div class="blog-img-container">
-                    <img src="./images/blog-1.jpg" alt="">
+                    <img src="https://i.postimg.cc/7YTPxpG0/blog-1.jpg" alt="">
                   </div>
                   <div class="blog-content-wrapper">
                     <h2>Blogs Title Here</h2>
@@ -670,7 +701,7 @@
                 </div>
                 <div class="swiper-slide box">
                   <div class="blog-img-container">
-                    <img src="./images/blog-2.jpg" alt="">
+                    <img src="https://i.postimg.cc/HLTT9nS9/blog-2.jpg" alt="">
                   </div>
                   <div class="blog-content-wrapper">
                     <h2>Blogs Title Here</h2>
@@ -680,7 +711,7 @@
                 </div>
                 <div class="swiper-slide box">
                   <div class="blog-img-container">
-                    <img src="./images/blog-3.jpg" alt="">
+                    <img src="https://i.postimg.cc/nzzZN5fs/blog-3.jpg" alt="">
                   </div>
                   <div class="blog-content-wrapper">
                     <h2>Blogs Title Here</h2>
@@ -690,7 +721,7 @@
                 </div>
                 <div class="swiper-slide box">
                   <div class="blog-img-container">
-                    <img src="./images/blog-4.jpg" alt="">
+                    <img src="https://i.postimg.cc/dDMYkVkd/blog-4.jpg" alt="">
                   </div>
                   <div class="blog-content-wrapper">
                     <h2>Blogs Title Here</h2>
@@ -700,7 +731,7 @@
                 </div>
                 <div class="swiper-slide box">
                   <div class="blog-img-container">
-                    <img src="./images/blog-5.jpg" alt="">
+                    <img src="https://i.postimg.cc/QNFKTYKx/blog-5.jpg" alt="">
                   </div>
                   <div class="blog-content-wrapper">
                     <h2>Blogs Title Here</h2>
@@ -818,11 +849,20 @@
            <!-- Social Media Icons Connect Starts -->
           <section class="social-media-section">
             <div class="social-media-icons">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-square-x-twitter"></i>
-              <i class="fa-brands fa-square-instagram"></i>
-              <i class="fa-brands fa-square-pinterest"></i>
+              <a href="https://www.facebook.com/share/19HBRoD6nn/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://x.com/Avicenna8168?t=ILFOvGjwE1MYxNfsxlO7eg&s=09" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/mojoyinolaavicenna?igsh=MWF1Zzc1cWg2azRocg==" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mojoyinola-ajibola-2b1b98270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
             </div>
+        </section>
           </section>
           <!-- Social Media Icons Connect Starts -->
           <section class="all-rights-reseerved">
@@ -833,26 +873,61 @@
 
        
     </div>
+
+     <!-- Your Cart Section Starts -->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="./images/book-3.png" alt="" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">Casual Black Polo </h2>
+                    <div class="cart-price-free-container">
+                      <span class="cart-price">$100</span>
+                      <p>Free</p>
+                    </div>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash cart-remove"></i>
+            </div> -->
+        </div>
+       <i class="fa-solid fa-xmark" id="close-cart"></i>
+      </div>
+     <!-- Your Cart Section Ends -->
+
      <!-- Form Section Starts -->
      <section class="form-section">
       <div class="icon-x">
         <i class="fa-solid fa-x"></i>
       </div>
-      <form action="submit">
+      <form action="submit" id="sign-up-form">
         <h1>SIGN IN</h1>
+        <div class="photo-container">
+          <img src="./default-img.jpg" alt="" id="profile-pic">
+          <label for="input-field">Select Photo</label>
+          <input type="file" accept="image/png, image/jpg, image/jpeg" id="input-field">
+        </div>
         <div class="username-container">
           <label for="username">Username</label>
-          <input type="email" id="username" placeholder="enter your email">
+          <input type="text" id="username" placeholder="enter your name">
         </div>
         <div class="password-container">
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="enter your password">
         </div>
+        <div class="review-form-container">
+          <label for="review-share">Write a Review</label>
+          <textarea name="review" id="review-share" placeholder="Tell us about your experience"></textarea>
+        </div>
         <div class="checkbox-container">
           <input type="checkbox" name="remember-me" id="remember-me">
           <label for="remember-me">Remember Me</label>
         </div>
-        <a href="#" class="btn">Sign In</a>
+        <button type="submit" class="btn">Sign In</button>
         <div class="forgot-password-details">
           <p>Forget Password? <a href="#">Click Here</a></p>
           <p>Don't have an account? <a href="#">Create One</a></p>
@@ -866,8 +941,10 @@
         <img src="https://media.tenor.com/Au-L39-8IgYAAAAj/once-you-learn-to-read-you-will-forever-be-free.gif" alt="">
       </div>
      </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+     <script src="particles.js"></script>
+     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
